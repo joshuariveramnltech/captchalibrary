@@ -2,12 +2,9 @@ CaptchaLibrary
 ================
   
 Library Scope: __GLOBAL__  
-Created: __23/09/2019 15:58 UTC-8__  
 
+Author: __Joshua Kim Rivera | email:joshuakimrivera@gmail.com__
 
-Author: __Joshua Kim Rivera | email:joshua.rivera@mnltechnology.com__
-
-Company: [__Spiralworks Technologies Inc.__](http://www.spiralwrks.com/)
 
 
 ##### Contents:
@@ -33,16 +30,16 @@ View the latest keyword [Documentation here.](https://mainsystemdev.github.io/rf
 **Option 1**  
 Install using pypi, run:
 ```bash
-pip install rf-captchalibrary
+pip install robotframework-captchalibrary
 ```
 **Option 2**  
 With recent version of `pip`, it is possible to install directly from GitHub repository. To Install latest source
 from the master branch, use this command:
 ```bash
-pip install git+https://github.com/MainSystemDev/rf-captchalibrary.git
+pip install git+https://github.com/joshuariveramnltech/captchalibrary.git
 ```
 Please note that installation will take some time, because ``pip`` will
-clone the [CaptchaLibrary](https://github.com/MainSystemDev/rf-captchalibrary) project to a temporary directory and then
+clone the [CaptchaLibrary](https://github.com/joshuariveramnltech/captchalibrary) project to a temporary directory and then
 perform the installation.
 
 
