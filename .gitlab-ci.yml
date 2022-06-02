@@ -1,0 +1,30 @@
+stages:
+  - test
+  - Publish
+
+pep8:
+  stage: test
+  tags:
+    - pypi
+  script:
+    - pycodestyle src
+
+# demo-rflint:
+#   stage: test
+#   tags:
+#     - pypi
+#   script:
+#     - rflint --configure LineTooLong:110 demo
+
+Pypi Upload:
+  stage: Publish
+  script:
+    - python3 setup.py bdist_wheel
+    - python3 -m twine upload dist/*
+  tags:
+    - pypi
+    - deploy
+  only:
+    - tags
+  except:
+    - branches

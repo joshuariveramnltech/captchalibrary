@@ -1,0 +1,24 @@
+# Compiled python modules.
+*.pyc
+results
+# Setuptools distribution folder.
+/dist/
+
+# Python egg metadata, regenerated from source files by setuptools.
+*.egg-info
+
+# ignore build dir
+build
+
+element.png
+
+!documentation.html
+
+*.xml
+*.log
+
+.DS_Store
+.vscode
+
+# Virtual Environment Files
+venv
