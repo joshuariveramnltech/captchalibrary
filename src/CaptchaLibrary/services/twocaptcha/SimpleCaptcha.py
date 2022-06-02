@@ -19,6 +19,7 @@
 # SOFTWARE.
 
 import base64
+from email.mime import image
 import requests
 import json
 from robotlibcore import keyword
@@ -45,19 +46,19 @@ class SimpleCaptcha(EncDec):
         self.TC_API_KEY = TC_API_KEY
 
     @keyword
-    def tc_simplecaptcha_solve(self, imagepath, case_sensitive=0):
+    def tc_simplecaptcha_solve(self, b64String=None, imagepath=None,  case_sensitive=0):
         """Sends a simple captcha solve request to 2Captcha Service.
         """
-        logger.console(imagepath)
-        b64String = self.convert_captcha_image_to_base64(imagepath)
+        if imagepath:
+            logger.console(imagepath)
+            b64String = self.convert_captcha_image_to_base64(imagepath)
         captcha_id = self._tc_submit_simplecaptcha_request(b64String,
                                                            case_sensitive)
         logger.console(captcha_id)
         captcha_value = self._tc_retrieve_captcha(captcha_id)
         return captcha_value
 
-    @keyword
-    def tc_submit_simplecaptcha_request(self, b64String, case_sensitive):
+    def _tc_submit_simplecaptcha_request(self, b64String, case_sensitive):
         """
         """
         payload = {
