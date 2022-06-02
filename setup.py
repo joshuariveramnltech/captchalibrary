@@ -24,14 +24,14 @@ with open(join(CURDIR, 'requirements.txt')) as f:
     REQUIREMENTS = f.read().splitlines()
 
 setup(
-    name                                ='rf-captchalibrary',
+    name                                ='robotframework-captchalibrary',
     version                             =VERSION,
     description                         ='Test Library for decoding base64 captchas to string format.',
     long_description                    =long_description,
     long_description_content_type       ="text/markdown",
-    url                                 ='https://github.com/MainSystemDev/rf-captchalibrary',
+    url                                 ='https://github.com/joshuariveramnltech/captchalibrary',
     author                              ='Joshua Kim Rivera',
-    author_email                        ='joshua.rivera@mnltechnology.com',
+    author_email                        ='joshuakimrivera@gmail.com',
     license                             = license,
     platforms                           = 'any',
     classifiers                         = CLASSIFIERS,

@@ -1,4 +1,4 @@
-# Copyright (C) 2019 Spiralworks Technologies Inc.
+# Copyright (C) 2022 Joshua Kim Rivera
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -39,11 +39,9 @@ class CaptchaLibrary(HybridCore):
 
     == About ==
 
-    Created: 23/09/2019 PST
 
-    Author: Joshua Kim Rivera | joshua.rivera@mnltechnology.com
+    Author: Joshua Kim Rivera | joshuakimrivera@gmail.com
 
-    Company: Spiralworks Technologies Inc.
     """
 
     ROBOT_LIBRARY_SCOPE = 'GLOBAL'
@@ -71,4 +69,3 @@ class CaptchaLibrary(HybridCore):
             Img()
         ]
         HybridCore.__init__(self, libraries)
-
