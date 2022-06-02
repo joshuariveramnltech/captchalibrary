@@ -20,11 +20,11 @@ Author: __Joshua Kim Rivera | email:joshuakimrivera@gmail.com__
 
 ### Introduction
 **CaptchaLibrary** is a [Robotframework](https://www.robotframework.org) Test Library for decoding Captchas.  
-![PyPI](https://img.shields.io/pypi/v/rf-captchalibrary?style=for-the-badge) 
-![PyPI - Downloads](https://img.shields.io/pypi/dd/rf-captchalibrary?style=for-the-badge)
-![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rf-captchalibrary?style=for-the-badge)
+![PyPI](https://img.shields.io/pypi/v/robotframework-captchalibrary?style=for-the-badge) 
+![PyPI - Downloads](https://img.shields.io/pypi/dd/robotframework-captchalibrary?style=for-the-badge)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/robotframework-captchalibrary?style=for-the-badge)
   
-View the latest keyword [Documentation here.](https://mainsystemdev.github.io/rf-captchalibrary/)
+View the latest keyword [Documentation here.](https://joshuariveramnltech.github.io/captchalibrary/)
 
 ### Installation
 **Option 1**  
