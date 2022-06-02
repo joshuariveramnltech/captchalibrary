@@ -56,7 +56,8 @@ class SimpleCaptcha(EncDec):
         captcha_value = self._tc_retrieve_captcha(captcha_id)
         return captcha_value
 
-    def _tc_submit_simplecaptcha_request(self, b64String, case_sensitive):
+    @keyword
+    def tc_submit_simplecaptcha_request(self, b64String, case_sensitive):
         """
         """
         payload = {
