@@ -50,11 +50,11 @@ class SimpleCaptcha(EncDec):
         """Sends a simple captcha solve request to 2Captcha Service.
         """
         if imagepath:
-            logger.console(imagepath)
+            logger.info(imagepath)
             b64String = self.convert_captcha_image_to_base64(imagepath)
         captcha_id = self._tc_submit_simplecaptcha_request(b64String,
                                                            case_sensitive)
-        logger.console(captcha_id)
+        logger.info(captcha_id)
         captcha_value = self._tc_retrieve_captcha(captcha_id)
         return captcha_value
 
